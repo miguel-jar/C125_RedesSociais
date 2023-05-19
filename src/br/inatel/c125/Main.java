@@ -1,7 +1,7 @@
-package br.inatel.robotbulls;
+package br.inatel.c125;
 
-import br.inatel.robotbulls.socialnetworks.*;
-import br.inatel.robotbulls.usuario.Usuario;
+import br.inatel.c125.socialnetworks.*;
+import br.inatel.c125.usuario.Usuario;
 
 public class Main {
     public static void main(String[] args) {

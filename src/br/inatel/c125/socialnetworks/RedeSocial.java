@@ -1,4 +1,4 @@
-package br.inatel.robotbulls.socialnetworks;
+package br.inatel.c125.socialnetworks;
 
 public abstract class RedeSocial {
     protected String senha;

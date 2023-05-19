@@ -1,4 +1,4 @@
-package br.inatel.robotbulls.socialnetworks;
+package br.inatel.c125.socialnetworks;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +10,7 @@ public class Instagram extends RedeSocial {
 
     public Instagram() {
         try {
-            Path arquivo = Paths.get("src/br/inatel/robotbulls/arquivos/instagram.txt");
+            Path arquivo = Paths.get("src/br/inatel/c125/arquivos/instagram.txt");
             List<String> lista = Files.readAllLines(arquivo);
 
             this.senha = lista.get(0).split("=")[1];

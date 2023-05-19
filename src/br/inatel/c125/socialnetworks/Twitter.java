@@ -1,6 +1,6 @@
-package br.inatel.robotbulls.socialnetworks;
+package br.inatel.c125.socialnetworks;
 
-import br.inatel.robotbulls.interfaces.Compartilhamento;
+import br.inatel.c125.interfaces.Compartilhamento;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +12,7 @@ public class Twitter extends RedeSocial implements Compartilhamento {
 
     public Twitter() {
         try {
-            Path arquivo = Paths.get("src/br/inatel/robotbulls/arquivos/twitter.txt");
+            Path arquivo = Paths.get("src/br/inatel/c125/arquivos/twitter.txt");
             List<String> lista = Files.readAllLines(arquivo);
 
             this.senha = lista.get(0).split("=")[1];

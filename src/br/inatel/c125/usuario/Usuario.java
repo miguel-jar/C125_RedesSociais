@@ -1,6 +1,6 @@
-package br.inatel.robotbulls.usuario;
+package br.inatel.c125.usuario;
 
-import br.inatel.robotbulls.socialnetworks.*;
+import br.inatel.c125.socialnetworks.*;
 
 public class Usuario {
     private String email, nome;
