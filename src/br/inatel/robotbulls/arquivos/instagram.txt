@@ -1,0 +1,2 @@
+senha=instagram123
+numeroDeAmigos=4
