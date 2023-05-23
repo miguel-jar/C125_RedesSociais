@@ -1,29 +1,23 @@
 package br.inatel.c125.usuario;
+import br.inatel.c125.socialnetworks.RedeSocial;
 
-import br.inatel.c125.socialnetworks.*;
+import java.util.List;
 
 public class Usuario {
-    private String email, nome;
-    public Facebook contaFacebook;
-    public GooglePlus contaGooglePlus;
-    public Instagram contaInstagram;
-    public Twitter contaTwitter;
 
-    public Usuario(String email, String nome, RedeSocial[] redesocial) {
+    @SuppressWarnings("FieldCanBeLocal")
+    private final String email, nome;
 
-        for (RedeSocial rede : redesocial) {
-            if (rede instanceof Facebook) {
-                contaFacebook = (Facebook) rede;
-            } else if (rede instanceof GooglePlus) {
-                contaGooglePlus = (GooglePlus) rede;
-            } else if (rede instanceof Instagram) {
-                contaInstagram = (Instagram) rede;
-            } else if (rede instanceof Twitter) {
-                contaTwitter = (Twitter) rede;
-            }
-        }
+    private final List<RedeSocial> redeSocial;
 
+    public Usuario(String email, String nome, List<RedeSocial> redeSocial) {
+
+        this.redeSocial = redeSocial;
         this.email = email;
         this.nome = nome;
+    }
+
+    public List<RedeSocial> getRedeSocial() {
+        return redeSocial;
     }
 }
