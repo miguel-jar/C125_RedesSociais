@@ -12,7 +12,7 @@ public class Main {
         List<RedeSocial> redeSocial = new ArrayList<>();
 
         redeSocial.add(new Facebook());
-        redeSocial.add(new Instagram());
+        redeSocial.add(new Twitter());
 
         Usuario usuario = new Usuario("Bagatela", "eldourado@ss.com.br", redeSocial);
 
@@ -40,6 +40,7 @@ public class Main {
             } else {
                 System.out.println("Erro: este tipo de conta não permite compartilhamento");
                 System.out.println("Erro: este tipo de conta não permite fazer streaming");
+
             }
 
         } catch (IndexOutOfBoundsException e) {
